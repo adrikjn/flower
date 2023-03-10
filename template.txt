@@ -1,0 +1,51 @@
+Enoncé 
+
+Vous êtes invité a créer un site de boutique de fleurs
+
+le site est composé de deux parties : une partie publique et une partie privée (accessible via une authentification)
+
+dans la partie publique vous avez les pages suivantes
+- page d'accueil qui présente les 5 dernières bouquets
+- page bouquet qui présente un bouquet sélectionnée
+- page de contact avec un formulaire avec deux champs email et commentaire pour poser des questions
+- page de login pour accédder à la partie privée du site 
+    cette page contient un formulaire avec deux champs login et password 
+- une page mentions légales
+- une page 404 si la page demandée n'existe pas 
+
+dans la partie privée vous avez les pages suivantes : 
+- une page d'accueil qui vient saluer le gestionnaire du site 
+- une section gestion de pages pour créer la page mention légale 
+- une section gestion des recettes qui permet de réaliser un CRUD sur les recettes de cuisines 
+- une secton commentaire dans laquelle on affiche l'ensemble des commentaires saisit dans la page contact de la partie privée 
+-Gestion profil user pour réaliser un crud sur les profils utilisateurs
+
+au niveau base de données vous avez 4 tables 
+
+TABLE pages
+id clé primaire 
+titre texte avec un maximum de 255 lettres 
+contenu avec un maximum de 65 milles lettres 
+dt_creation  date et l'heure
+
+TABLE recettes
+id clé primaire 
+nom texte avec un maximum de 255 lettres 
+preparation texte avec un maximum de 65 milles lettres 
+prix chiffre entier maximum de 65 000 
+categorie 3 valeurs possible entree / plat / dessert
+image avec un maximum de 255 lettres 
+dt_creation date et l'heure 
+
+TABLE users
+id clé primaire 
+nom texte avec un maximum de 255 lettres 
+email texte avec un maximum de 255 lettres 
+password texte avec un maximum de 255 lettres
+dt_creation date et heure 
+
+TABLE contacts
+id clé primaire 
+email texte avec un maximum de 255 lettres 
+commentaire texte avec un maximum de 65 milles lettres 
+dt_creation date et l'heure 
